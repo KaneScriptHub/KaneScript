@@ -96,7 +96,7 @@
     </style>
 </head>
 <body>
-    <h1>GlobalTech.Github.io</h1>
+    <h1>KaneScript.Github.io</h1>
     <div id="countdown"></div>
     <button id="get-key-button" onclick="startCooldown()">Get Key</button>
     <button id="reset-time-button" onclick="showPasswordDialog()">Erase Time</button>
@@ -158,7 +158,7 @@
 
         // Bắt đầu đếm ngược 10 giây để lấy key
         function startCooldown() {
-            let countdownValue = 25; // 25 giây đếm ngược
+            let countdownValue = 15; // 25 giây đếm ngược
             countdownElement.textContent = `Countdown: ${countdownValue} seconds`;
 
             getKeyButton.disabled = true; // Disable nút get key trong quá trình đếm ngược
@@ -203,7 +203,7 @@
         function generateRandomKey() {
             const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
             let result = 'free_';
-            for (let i = 0; i < 30; i++) {
+            for (let i = 0; i < 32; i++) {
                 result += characters.charAt(Math.floor(Math.random() * characters.length));
             }
             return result;
